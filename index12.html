@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>shanmugaraj</title>
+</head>
+<body>
+<script>
+ <!-- var a=prompt(parseInt("Enter your number")) -->
+ 
+ <!-- if(a%7==0){ -->
+        <!-- console.log("A is Multiple of 7") -->
+		<!-- } -->
+      <!-- else{ -->
+      <!-- console.log("A is the not Multiple of 7")      	   -->
+	<!-- } -->
+<!----------------------------------counting duplicate elements in javascript------------------------>
+   var a=[1,2,3,4,4,5,6,7,8,9,10]
+    var count=1
+    var visited=-1
+        for(i=0;i<a.length;i++){
+		       count=1
+            for(j=i+1;j<a.length;j++){
+               if(a[i]===a[j]){
+			      count++
+				  a[j]=visited
+			   }
+            }
+			 if(a[i]>0){
+            console.log(a[i],count)
+			}
+}					
+	
+	</script>
+	</body>
+	</html>
+	
